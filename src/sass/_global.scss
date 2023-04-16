@@ -3,3 +3,16 @@
 *::after {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  font-family: $primaryFont;
+  color: $primaryColor;
+  max-width: 1920px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
