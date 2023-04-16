@@ -2,14 +2,14 @@
 @import 'normalize';
 
 // Bootstrap
-@import 'bootstrap';
+@import 'bootstrap/bootstrap-grid.css';
 
 // variables
 @import 'variables';
 
 // common styles
-@import 'layout';
 @import 'global';
+@import 'layout';
 @import 'typography';
 
 // Fontello icons
