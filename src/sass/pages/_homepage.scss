@@ -1,0 +1,122 @@
+// Header
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 685px;
+  background-size: auto;
+  z-index: 1;
+
+
+  &:before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.4);
+    background-image: url('../../images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transform: scale(1.2);
+
+  }
+}
+
+.logo {
+  position: absolute;
+  width: 300px;
+  height: 15px;
+  color: $color-light;
+  text-transform: uppercase;
+  top: 25%;
+  left: 12%;
+
+  h2 {
+    font-size: 28px;
+    font-weight: $font-bold;
+    letter-spacing: 8px;
+    margin-bottom: 6px;
+
+  }
+
+  h6 {
+    font-size: 12px;
+    font-weight: $font-bold;
+    letter-spacing: 4px;
+  }
+}
+
+// Navbar menu
+
+.nav-wrapper {
+
+  a {
+    font-size: 15px;
+    font-weight: $font-semibold;
+    color: darken($color-light, 45%);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 20px;
+    letter-spacing: 0.5px;
+
+  }
+}
+
+// Title
+
+.title {
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 58%;
+    left: 54%;
+    transform: $translate;
+    width: 250px;
+    height: 5px;
+    background-color: $primaryColor;
+
+  }
+}
+
+.title-wrapper {
+  text-transform: uppercase;
+
+  .title-one {
+    font-size: 80px;
+    position: absolute;
+    top: 23%;
+    left: 12%;
+  }
+
+  .title-two {
+    font-size: 80px;
+    // text-align: right;
+    position: absolute;
+    top: 34%;
+    left: 26%;
+  }
+}
+
+.icon-header-wrapper {
+  color: $color-light;
+
+  .icon-title {
+    position: absolute;
+    top: 95%;
+    left: 54.5%;
+    transform: $translate;
+    font-size: 29px;
+    width: 180px;
+    height: 25px;
+  }
+
+  .icon-arrow-down {
+    position: absolute;
+    top: 104%;
+    left: 54%;
+    transform: $translate;
+    font-size: 36px;
+  }
+}

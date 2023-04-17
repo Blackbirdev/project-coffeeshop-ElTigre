@@ -2,7 +2,7 @@
 @import 'normalize';
 
 // Bootstrap
-@import 'bootstrap/bootstrap.scss';
+@import 'bootstrap/bootstrap';
 
 // variables
 @import 'variables';
@@ -11,6 +11,12 @@
 @import 'global';
 @import 'layout';
 @import 'typography';
+
+// pages styles
+@import 'pages/homepage';
+@import 'pages/products';
+@import 'pages/about';
+@import 'pages/contact';
 
 // Fontello icons
 @import 'icons';
