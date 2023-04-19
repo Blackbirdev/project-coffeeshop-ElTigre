@@ -1,0 +1,27 @@
+// Products
+
+.products {
+position: relative;
+    height: 1600px;
+}
+
+.products-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+    h1{
+      font-size: 55px;
+    }
+  
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7.5%;
+      left: 50%;
+      transform: $translate;
+      width: 540px;
+      height: 5px;
+      background-color: $primaryColor;
+    }
+  }
