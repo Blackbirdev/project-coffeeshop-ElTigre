@@ -50,7 +50,6 @@
 // Navbar menu
 
 .nav-wrapper {
-
   a {
     font-size: 15px;
     font-weight: $font-semibold;
@@ -66,57 +65,59 @@
 // Title
 
 .title {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .title-one {
+    height: 30px;
+    font-size: 77px;
+    padding: 86px 0 26px 85px;
+    letter-spacing: 16px;
+  }
+
+  .title-two {
+    height: 30px;
+    font-size: 77px;
+    padding: 0 0 0 230px;
+    letter-spacing: 16px;
+  }
 
   &::after {
     content: "";
     position: absolute;
-    top: 58%;
-    left: 54%;
+    top: 65%;
+    left: 48.8%;
     transform: $translate;
-    width: 250px;
+    width: 220px;
     height: 5px;
     background-color: $primaryColor;
 
   }
 }
 
-.title-wrapper {
-  text-transform: uppercase;
-
-  .title-one {
-    font-size: 80px;
-    position: absolute;
-    top: 23%;
-    left: 12%;
-  }
-
-  .title-two {
-    font-size: 80px;
-    // text-align: right;
-    position: absolute;
-    top: 34%;
-    left: 26%;
-  }
-}
-
 .icon-header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: $color-light;
+  padding-top: 260px;
 
   .icon-title {
-    position: absolute;
-    top: 95%;
-    left: 54.5%;
-    transform: $translate;
-    font-size: 29px;
+    // position: absolute;
+    // top: 95%;
+    // left: 50%;
+    // transform: $translate;
+    font-size: 25px;
     width: 180px;
     height: 25px;
+    padding-left: 20px;
+    margin-bottom: 15px;
   }
 
   .icon-arrow-down {
-    position: absolute;
-    top: 104%;
-    left: 54%;
-    transform: $translate;
     font-size: 36px;
   }
 }
