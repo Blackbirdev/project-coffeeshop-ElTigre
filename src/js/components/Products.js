@@ -14,18 +14,15 @@ class Product {
   render() {
     const thisProduct = this;
 
+    thisProduct.dom = {};
+
     const generatedHTML = templates.products(thisProduct.data);
     const productsWrapper = document.querySelectorAll(select.containerOf.product);
 
     thisProduct.elem = utils.createDOMFromHTML(generatedHTML);
-    // thisProduct.elemTwo = utils.createDOMFromHTML(generatedHTML);
 
     productsWrapper[0].appendChild(thisProduct.elem);
-    // productsWrapper[1].appendChild(thisProduct.elemTwo);
   }
 }
-
-
-
 
 export default Product;

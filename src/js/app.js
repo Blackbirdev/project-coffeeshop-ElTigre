@@ -1,6 +1,7 @@
 import { select, settings, classNames } from './settings.js';
 import Product from './components/Products.js';
 import About from './components/About.js';
+import Contact from './components/Contact.js';
 
 const app = {
 
@@ -20,7 +21,6 @@ const app = {
         break;
       }
     }
-
     thisApp.activatePage(pageMatchingHash);
 
     for (let link of thisApp.navLinks) {
@@ -28,13 +28,9 @@ const app = {
         const clickedElement = this;
         event.preventDefault();
 
-        /* get page id from href attribute */
         const id = clickedElement.getAttribute('href').replace('#', '');
 
-        /* run thisApp.activatePage with that id */
         thisApp.activatePage(id);
-
-        /* change URL hash */
         window.location.hash = '#/' + id;
       });
     }
@@ -46,10 +42,8 @@ const app = {
     for (let page of thisApp.pages) {
       page.classList.toggle(classNames.pages.active, page.id == pageId);
     }
-    
     for (let link of thisApp.navLinks) {
-      link.classList.toggle(
-        classNames.nav.active,
+      link.classList.toggle(classNames.nav.active,
         link.getAttribute('href') == '#' + pageId
       );
     }
@@ -57,7 +51,6 @@ const app = {
 
   initProduct: function () {
     const thisApp = this;
-    console.log('thisApp.data:', thisApp.data);
 
     for (let productData in thisApp.data.products) {
       new Product(thisApp.data.products[productData].id, thisApp.data.products[productData]);
@@ -87,12 +80,20 @@ const app = {
     thisApp.aboutElem = new About(aboutElem, thisApp);
   },
 
+  initContact: function () {
+    const thisApp = this;
+
+    thisApp.contactElem = document.querySelector(select.containerOf.contact);
+    thisApp.contactPage = new Contact(thisApp.contactElem);
+  },
+
   init: function () {
     const thisApp = this;
 
+    thisApp.initPages();
     thisApp.initData();
     thisApp.initAbout();
-
+    thisApp.initContact();
   },
 };
 

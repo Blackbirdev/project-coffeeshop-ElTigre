@@ -1,11 +1,14 @@
 export const select = {
   templateOf: {
+    homeWidget: '#template-home-widget',
     products: '#template-product',
+    contactWidget: '#template-contact-widget',
   },
 
   containerOf: {
     home: '.home-wrapper',
     product: '.products-container',
+    contact: '.contact-wrapper',
     carousel: '.main-carousel',
     pages: '#pages',
   },
@@ -48,4 +51,5 @@ export const settings = {
 
 export const templates = {
   products: Handlebars.compile(document.querySelector(select.templateOf.products).innerHTML),
+  contactWidget: Handlebars.compile(document.querySelector(select.templateOf.contactWidget).innerHTML),
 };

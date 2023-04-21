@@ -5,11 +5,11 @@
 }
 
 #pages {
-  > * {
+  >* {
     display: none;
   }
 
-  > .active {
+  >.active {
     display: block;
   }
 }
@@ -35,17 +35,17 @@ body {
   margin-bottom: 70px;
 
   h1 {
-      font-size: 55px;
+    font-size: 55px;
   }
 
   &::after {
-      content: "";
-      position: absolute;
-      top: 9.2%;
-      left: 50%;
-      transform: $translate;
-      width: 540px;
-      height: 5px;
-      background-color: $primaryColor;
+    content: "";
+    position: absolute;
+    top: 9.2%;
+    left: 50%;
+    transform: $translate;
+    width: 540px;
+    height: 5px;
+    background-color: $primaryColor;
   }
 }
