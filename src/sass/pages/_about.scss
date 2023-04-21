@@ -3,8 +3,8 @@
 .about {
   position: relative;
   width: 100%;
-  height: 685px;
-  margin-bottom: 130px;
+  height: 785px;
+  margin-bottom: 30px;
   background-size: auto;
   overflow: hidden;
   z-index: 1;
@@ -24,23 +24,8 @@
 }
 
 .about-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  h1 {
-    font-size: 55px;
-  }
-
   &::after {
-    content: "";
-    position: absolute;
-    top: 18%;
-    left: 50%;
-    transform: $translate;
-    width: 540px;
-    height: 5px;
-    background-color: $primaryColor;
+    top: 19.2%;
   }
 }
 

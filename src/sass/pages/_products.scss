@@ -3,28 +3,6 @@
 .products-wrapper {
     position: relative;
     height: 100%;
-
-    .products-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 70px;
-
-        h1 {
-            font-size: 55px;
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            top: 9.2%;
-            left: 50%;
-            transform: $translate;
-            width: 540px;
-            height: 5px;
-            background-color: $primaryColor;
-        }
-    }
 }
 
 .product-card {
