@@ -10,6 +10,10 @@ export const select = {
     pages: '#pages',
   },
 
+  nav: {
+    links: '.nav-wrapper a'
+  },
+
   product: {
     wrapper: '.product-card',
     name: '.product-title',
@@ -24,7 +28,15 @@ export const classNames = {
   product: {
     rightCard: 'right',
     mostPopular: 'most-popular',
-  }
+  },
+
+  pages: {
+    active: 'active',
+  },
+
+  nav: {
+    active: 'active',
+  },
 };
 
 export const settings = {
