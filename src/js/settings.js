@@ -5,7 +5,7 @@ export const select = {
 
   containerOf: {
     home: '.home-wrapper',
-    product: '.product-wrapper',
+    product: '.products-container',
     carousel: '.main-carousel',
     pages: '#pages',
   },
@@ -25,12 +25,12 @@ export const classNames = {
     rightCard: 'right',
     mostPopular: 'most-popular',
   }
-
 };
 
 export const settings = {
   db: {
     url: '//' + window.location.hostname + (window.location.hostname == 'localhost' ? ':3131' : ''),
+    products: 'products',
   },
 };
 
