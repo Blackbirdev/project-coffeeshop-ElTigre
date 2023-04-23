@@ -17,10 +17,9 @@ class Product {
     thisProduct.dom = {};
 
     const generatedHTML = templates.products(thisProduct.data);
-    const productsWrapper = document.querySelectorAll(select.containerOf.product);
+    const productsWrapper = document.querySelectorAll(select.containerOf.products);
 
     thisProduct.elem = utils.createDOMFromHTML(generatedHTML);
-
     productsWrapper[0].appendChild(thisProduct.elem);
   }
 }

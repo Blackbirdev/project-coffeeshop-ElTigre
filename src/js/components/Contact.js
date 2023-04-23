@@ -16,7 +16,6 @@ class Contact {
     const contactWrapper = document.querySelector(select.containerOf.contact);
 
     thisContact.dom = element;
-
     contactWrapper.appendChild(generatedDom);
   }
 }

@@ -24,7 +24,6 @@
 
 .logo {
   position: absolute;
-  // width: 300px;
   height: 15px;
   color: $color-light;
   text-transform: uppercase;
@@ -112,6 +111,105 @@
   .icon-arrow-down {
     font-size: 36px;
   }
+
+  .bounce {
+    display: inline-block;
+    position: relative;
+    -moz-animation: bounce 1s infinite linear;
+    -o-animation: bounce 1s infinite linear;
+    -webkit-animation: bounce 1s infinite linear;
+    animation: bounce 1s infinite linear;
+  }
+
+  @-webkit-keyframes bounce {
+    0% {
+      top: 0;
+    }
+
+    50% {
+      top: -0.2em;
+    }
+
+    70% {
+      top: -0.3em;
+    }
+
+    100% {
+      top: 0;
+    }
+  }
+
+  @-moz-keyframes bounce {
+    0% {
+      top: 0;
+    }
+
+    50% {
+      top: -0.2em;
+    }
+
+    70% {
+      top: -0.3em;
+    }
+
+    100% {
+      top: 0;
+    }
+  }
+
+  @-o-keyframes bounce {
+    0% {
+      top: 0;
+    }
+
+    50% {
+      top: -0.2em;
+    }
+
+    70% {
+      top: -0.3em;
+    }
+
+    100% {
+      top: 0;
+    }
+  }
+
+  @-ms-keyframes bounce {
+    0% {
+      top: 0;
+    }
+
+    50% {
+      top: -0.2em;
+    }
+
+    70% {
+      top: -0.3em;
+    }
+
+    100% {
+      top: 0;
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+      top: 0;
+    }
+
+    50% {
+      top: -0.2em;
+    }
+
+    70% {
+      top: -0.3em;
+    }
+
+    100% {
+      top: 0;
+    }
+  }
 }
 
 .footer {
@@ -120,4 +218,100 @@
   text-align: center;
   letter-spacing: 0.38px;
   color: $color-dark;
+}
+
+//*** Media queries ***//
+
+@media (max-width: 783px) {
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: $translate;
+    margin-left: 8px;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .title {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: -60px;
+
+    .title-one {
+      font-size: 55px;
+      padding: 0 0 0 0;
+    }
+
+    .title-two {
+      font-size: 55px;
+      padding: 0 0 0 0;
+    }
+
+    &::after {
+      top: 66%;
+    }
+  }
+
+  .icon-header {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: $translate;
+  }
+}
+
+@media (max-width: 1014px) {
+
+  .title {
+    text-align: center;
+    padding-top: 70px;
+
+    .title-one {
+      font-size: 65px;
+      padding: 0 0 0 0;
+
+    }
+
+    .title-two {
+      font-size: 65px;
+      padding: 15px 0 0 0;
+    }
+  }
+
+  .icon-header {
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: $translate;
+  }
+}
+
+@media (max-width: 1084px) {
+
+  .title {
+
+    .title-one {
+      font-size: 68px;
+    }
+
+    .title-two {
+      font-size: 68px;
+    }
+  }
 }

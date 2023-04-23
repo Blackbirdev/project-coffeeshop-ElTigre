@@ -1,68 +1,68 @@
 // Contact
 
 .contact-wrapper {
-    position: relative;
+  position: relative;
 }
 
 .contact-title {
-    &::after {
-        top: 13.5%;
-    }
+  &::after {
+    top: 13.5%;
+  }
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 
 
-    label {
-        color: $color-dark;
-        font-size: 30px;
-        font-weight: 700;
-        margin-bottom: 34px;
-        letter-spacing: 6px;
-        text-align: center;
-        text-transform: uppercase;
-    }
+  label {
+    color: $color-dark;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 34px;
+    letter-spacing: 6px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
-    input {
-        width: 430px;
-        height: 70px;
-        margin-bottom: 34px;
-        font-size: 30px;
-        border: 2px solid $color-dark;
-    }
+  input {
+    width: 430px;
+    height: 70px;
+    margin-bottom: 34px;
+    font-size: 30px;
+    border: 2px solid $color-dark;
+  }
 
-    textarea {
-        width: 430px;
-        height: 154px;
-        margin-bottom: 48px;
-        font-size: 25px;
-        border: 2px solid $color-dark;
-    }
+  textarea {
+    width: 430px;
+    height: 154px;
+    margin-bottom: 48px;
+    font-size: 25px;
+    border: 2px solid $color-dark;
+  }
 }
 
 .btn {
-    background: $color-light;
-    width: 230px;
-    height: 75px;
-    margin-bottom: 100px;
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: $font-bold;
-    transition: all 1.2s;
-    background-position: 100% 0;
-    background-size: 300%;
-    background-image: linear-gradient(90deg, $primaryColor 50%, transparent 50%);
-    color: $primaryColor;
-    border: 2px solid $primaryColor;
+  background: $color-light;
+  width: 230px;
+  height: 75px;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: $font-bold;
+  transition: all 1.2s;
+  background-position: 100% 0;
+  background-size: 300%;
+  background-image: linear-gradient(90deg, $primaryColor 50%, transparent 50%);
+  color: $primaryColor;
+  border: 2px solid $primaryColor;
 
-    &:hover {
-        background-position: 0 100%;
-        background-color: $primaryColor;
-        color: $color-light;
-    }
+  &:hover {
+    background-position: 0 100%;
+    background-color: $primaryColor;
+    color: $color-light;
+  }
 
 }
