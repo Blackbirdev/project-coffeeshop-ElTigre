@@ -15,7 +15,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 10px;
   font-family: $primaryFont;
   color: $primaryColor;
   max-width: 1920px;
@@ -53,11 +53,11 @@ body {
 @media (max-width: 814px) {
   .section-title {
     padding-top: 30px;
-  
+
     h1 {
       font-size: 50px;
     }
-  
+
     &::after {
       top: 6.2%;
       width: 420px;
