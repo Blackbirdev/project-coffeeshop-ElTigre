@@ -87,7 +87,7 @@
 
 //*** Media queries ***//
 
-@media (max-width: 390px) {
+@media (min-width: 320px) and (max-width: 391px) {
   .carousel-cell {
     flex-direction: column;
     text-align: center;
@@ -101,8 +101,9 @@
     }
 
     p {
-      font-size: 50px;
-      br{
+      font-size: 5px;
+
+      br {
         display: none;
       }
     }
