@@ -223,7 +223,6 @@
 //*** Media queries ***//
 
 @media (max-width: 783px) {
-
   .logo {
     display: flex;
     flex-direction: column;
@@ -277,7 +276,6 @@
 }
 
 @media (max-width: 1014px) {
-
   .title {
     text-align: center;
     padding-top: 70px;
@@ -303,9 +301,7 @@
 }
 
 @media (max-width: 1084px) {
-
   .title {
-
     .title-one {
       font-size: 68px;
     }
